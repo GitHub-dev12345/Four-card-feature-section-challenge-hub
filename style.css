@@ -16,13 +16,14 @@ body{
     background: hsl(0, 0%, 98%);
 }
 
-/* Inner Body Container CSS Code */
+/* Inner Body main-Container CSS Code */
 main{
     display: flex;
     flex-direction: column;
 }
+
+/* In main-Container design Flex Container CSS Code */
 .flex-container{
-    /* border: 1px solid black; */
     display: flex;
     padding: 15px;
     flex-direction: column;
@@ -30,6 +31,7 @@ main{
     align-items: center;
 }
 
+/* Flex-container h1 tag css Code */
 .flex-container>h1{
     text-align: center;
     font-size: 2.1rem;
@@ -122,6 +124,19 @@ img{
     top: 140px;
 }
 
+footer{
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    word-spacing: 5px;
+    font-weight: 600;
+}
+
+footer a:hover{
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 @media screen and (max-width: 1150px) {
     body{
