@@ -40,6 +40,7 @@ main{
     opacity: 0.9;
 }
 
+/* Flex-Container h2 tag CSS Code */
 .flex-container>h2{
     text-align: center;
     font-weight: 900;
@@ -49,6 +50,7 @@ main{
     margin-bottom: 10px;
 }
 
+/* Flex-Container p tag CSS Code */
 .flex-container>p{
     width: 35%;
     text-align: center;
@@ -57,6 +59,7 @@ main{
     color: hsl(229, 6%, 66%);
 }
 
+/* Grid-Container CSS Code */
 .grid-container{
     /* border: 1px solid black; */
     max-width: 1050px;
@@ -69,6 +72,7 @@ main{
     row-gap: 25px;
 }
 
+/* Inner Grid Item Design CSS Code */
 .item{
     display: flex;
     flex-direction: column;
@@ -79,23 +83,27 @@ main{
     box-shadow: 0 7px 10px rgba(0,0,0,0.5);
 }
 
+/* Grid-Item h3 tag CSS Code */
 .item>h3{
     font-size: 1.2rem;
     opacity: 0.7;   
 }
 
+/* Grid-Item p tag CSS Code */
 .item>p{
     font-size: 13px;
     opacity: 0.9;
     color: hsl(229, 6%, 66%);
 }
 
+/* Grid-Item image CSS Code */
 img{
     width: 22%;
     align-self: flex-end;
     margin-top: 30px;
 }
 
+/* Grid Card-1 Design CSS Code */
 #Card-1{
     border-top: 5px solid hsl(180, 62%, 55%);
     grid-row-start: 1;
@@ -104,18 +112,21 @@ img{
     top: 140px;
 }
 
+/* Grid Card-2 Design CSS Code */
 #Card-2{
     border-top: 5px solid hsl(0, 78%, 62%);
     grid-row-start: 1;
     grid-column-start: 2;
 }
 
+/* Grid Card-3 Design CSS Code */
 #Card-3{
     border-top: 5px solid hsl(34, 97%, 64%);
     grid-row-start: 2;
     grid-column-start: 2;
 }
 
+/* Grid Card-4 Design CSS Code */
 #Card-4{
     border-top: 5px solid hsl(212, 86%, 64%);
     grid-row-start: 1;
@@ -124,6 +135,7 @@ img{
     top: 140px;
 }
 
+/* Footer Design CSS Code */
 footer{
     text-align: center;
     font-size: 1.1rem;
@@ -132,12 +144,14 @@ footer{
     font-weight: 600;
 }
 
+/* Footer anchor tag CSS Code */
 footer a:hover{
     color: red;
     text-decoration: none;
     cursor: pointer;
 }
 
+/* Responsive CSS Code */
 @media screen and (max-width: 1150px) {
     body{
         margin: 0px;
@@ -200,6 +214,6 @@ footer a:hover{
 
     .flex-container>p{
         font-size: 1rem;
-        transition: 00.4s;
+        transition: 0.4s;
     }
 }
