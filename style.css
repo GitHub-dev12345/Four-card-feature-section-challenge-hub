@@ -13,7 +13,7 @@ body{
     padding: 15px;
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
-    background: hsl(0, 0%, 98%);
+    background: palegoldenrod;
 }
 
 /* Inner Body main-Container CSS Code */
@@ -145,8 +145,8 @@ footer{
 }
 
 /* Footer anchor tag CSS Code */
-footer a:hover{
-    color: red;
+footer a:hover:visited{
+    color: red  ;
     text-decoration: none;
     cursor: pointer;
 }
