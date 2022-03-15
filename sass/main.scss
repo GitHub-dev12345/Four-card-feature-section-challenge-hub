@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+/* CSS Reset Margin & Padding  */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Design CSS Code */
+body{
+    max-width: 1440px;
+    margin: 25px auto;
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    background:hsl(0, 0%, 98%);
+}
+
+/* Inner Body main-Container CSS Code */
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+/* In main-Container design Flex Container CSS Code */
+.flex-container{
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+        text-align: center;
+        font-size: 2.1rem;
+        font-weight:lighter;
+        margin-bottom: 8px;
+        opacity: 0.9;
+    }
+    h2{
+        text-align: center;
+        font-weight: 900;
+        font-size: 2.1rem;
+        opacity: 0.9;
+        margin-top: -12px;
+        margin-bottom: 10px;
+    }
+    p{
+        width: 35%;
+        text-align: center;
+        font-size: 14px;
+        opacity: 0.9;
+        color: hsl(229, 6%, 66%);
+    }
+}
+
+/* Grid-Container CSS Code */
+.grid-container{
+    /* border: 1px solid black; */
+    max-width: 1050px;
+    display: grid;
+    padding: 20px;
+    margin: 25px auto;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(195px, 1fr));
+    column-gap: 25px;
+    row-gap: 25px;
+}
+
+/* Inner Grid Item Design CSS Code */
+.item{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 25px;
+    line-height: 1.9;
+    background: white;
+    box-shadow: 0 7px 10px rgba(0,0,0,0.5);
+
+    h3{
+        font-size: 1.2rem;
+        opacity: 0.7;
+    }
+    p{
+        font-size: 13px;
+        opacity: 0.9;
+        color: hsl(229, 6%, 66%);
+    }
+    img{
+        width: 22%;
+        align-self: flex-end;
+        margin-top: 30px;
+    }
+}
+
+/* Grid Card-1 Design CSS Code */
+#Card-1{
+    border-top: 5px solid hsl(180, 62%, 55%);
+    grid-row-start: 1;
+    grid-column-start: 1;
+    position: relative;
+    top: 140px;
+}
+
+/* Grid Card-2 Design CSS Code */
+#Card-2{
+    border-top: 5px solid hsl(0, 78%, 62%);
+    grid-row-start: 1;
+    grid-column-start: 2;
+}
+
+/* Grid Card-3 Design CSS Code */
+#Card-3{
+    border-top: 5px solid hsl(34, 97%, 64%);
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+
+/* Grid Card-4 Design CSS Code */
+#Card-4{
+    border-top: 5px solid hsl(212, 86%, 64%);
+    grid-row-start: 1;
+    grid-column-start: 3;
+    position: relative;
+    top: 140px;
+}
+
+/* Footer Design CSS Code */
+footer{
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    word-spacing: 5px;
+    font-weight: 600;
+    a{
+        color: orangered;
+        &:hover:visited{
+            color: green;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+}
+
+/* Responsive CSS Code */
+@media screen and (max-width: 1150px) {
+    body{
+        margin: 0px;
+        transition: 0.4s;
+    }
+
+    main{
+        display: block;
+    }
+
+    .flex-container>p{
+        width: auto;
+        transition: 0.5s;
+    }
+
+    #Card-1{
+        border-top: 5px solid hsl(180, 62%, 55%);
+        grid-row-start:auto;
+        grid-column-start: auto;
+        position: static;
+        top: 0px;
+        transition: 0.4s;
+    }
+    
+    #Card-2{
+        border-top: 5px solid hsl(0, 78%, 62%);
+        grid-row-start:  auto;
+        grid-column-start:  auto;
+        transition: 0.4s;
+    }
+    
+    #Card-3{
+        border-top: 5px solid hsl(34, 97%, 64%);
+        grid-row-start: auto;
+        grid-column-start: auto;
+        transition: 0.4s;
+    }
+    
+    #Card-4{
+        border-top: 5px solid hsl(212, 86%, 64%);
+        grid-row-start: auto;
+        grid-column-start: auto;
+        position: static;
+        top: 0px;
+        transition: 0.4s;
+    }
+}
+
+@media screen and (max-width: 470px){
+    .flex-container{
+        h1{
+            font-size: 1.5rem;
+            transition: 0.4s;
+        }
+        h2{
+            font-size: 1.5rem;
+            transition: 0.4s;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .flex-container{
+        h1{
+            font-size: 1.4rem;
+            transition: 0.4s;
+        }
+        h2{
+            font-size: 1.4rem;
+            transition: 0.4s;
+        }
+        p{
+            font-size: 1rem;
+            transition: 0.4s;
+        }
+    }
+}
